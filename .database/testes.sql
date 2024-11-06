@@ -23,3 +23,11 @@ WHERE u_status = 'on';
 SELECT u_id, u_nome, u_email
 FROM usuario
 WHERE u_status != 'del';
+
+-- Lista todos os trecos do "Joca" (id = 1)
+SELECT * FROM treco
+WHERE t_usuario = '1';
+
+-- Lista todos os trecos do "Joca" (id = 1) que estejam "online" (status = 'on')
+SELECT * FROM treco 
+WHERE t_usuario = '1' AND t_status = 'on';
